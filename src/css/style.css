@@ -1,0 +1,134 @@
+body {
+  position: relative;
+}
+
+.tasks {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 800px;
+  background-color: rgb(16, 122, 187);
+}
+
+.task-block {
+  width: 33%;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 5px;
+  box-sizing: border-box;
+  background-color: rgb(222, 226, 229);
+  border-radius: 3px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.points {
+  background-image: url('../pic/points.png');
+  width: 20px;
+  height: 15px;
+}
+
+.add-block {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.add-block :hover {
+  
+  background-position: center;
+}
+
+.add-label {
+  pointer-events: none;
+}
+.add-img {
+  pointer-events: none;
+  margin-top: 2px;
+  background-image: url('../pic/add.png');
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+}
+
+.add-textarea {
+  display: block;
+  height: 40px;
+  background-color: white;
+  resize: none;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  }
+
+  .add-form {
+    display: none;
+    margin-top: 10px;
+  }
+
+  .add-button {
+    background-color: yellowgreen;
+    color: white;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+  }
+
+  .add-button:hover {
+    background-color: rgb(12, 170, 19);
+  }
+
+  .add-cancel-button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+  }
+
+  .task {
+    min-height: 40px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .task-close {
+    background-color: rgb(222, 226, 229);
+    border: none;
+    position: absolute; 
+    display: none;
+  }
+
+  .task-name {
+    word-wrap: break-word;
+    width: 90%;
+    pointer-events: none;
+  }
+
+  .dragged {
+    position: absolute;
+    z-index: 999;
+    pointer-events: none;
+    border: 1px solid black;
+  }
+  
