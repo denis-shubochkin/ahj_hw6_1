@@ -101,6 +101,7 @@ body {
   }
 
   .task {
+    min-height: 40px;
     background-color: white;
     padding: 5px;
     border-radius: 3px;
@@ -116,13 +117,19 @@ body {
     border: none;
     position: absolute; 
     display: none;
-    pointer-events: none;
   }
 
   .task-name {
     word-wrap: break-word;
     width: 90%;
     pointer-events: none;
+  }
+
+  .dragged {
+    position: absolute;
+    z-index: 999;
+    pointer-events: none;
+    border: 1px solid black;
   }
   
 
